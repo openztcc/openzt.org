@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Custom background image classes */
+@layer utilities {
+  .bg-jumbotron {
+    background-image: url('../images/banner.png');
+  }
+}
