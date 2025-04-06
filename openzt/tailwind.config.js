@@ -21,6 +21,6 @@ module.exports = {
     "./layouts/**/*.html",
     "./content/**/*.md",
     "./assets/**/*.js",
-    "./public/**/*.html",
+    "../docs/**/*.html",
   ]
 };

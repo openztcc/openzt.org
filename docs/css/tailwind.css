@@ -7,9 +7,13 @@
   }
 }
 
-@layer theme {
-    :root {
-      --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
-    }
-  }
-  
+@theme {
+    /* Font styles */
+    --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+
+    /* Custom color palettes */
+    --color-ozt-default: #93B885;
+    --color-ozt-dark: #77956C;
+    --color-ozt-light: #BEE5B0;
+    --color-ozt-accent: #FED284;
+}
