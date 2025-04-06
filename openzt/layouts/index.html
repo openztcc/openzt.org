@@ -14,28 +14,24 @@
   {{ partial "jumbotron.html" . }}
 
   {{/* Bullet boxes */}}
-  <div class="flex flex-wrap justify-center gap-2 p-4">
-    <div class="max-w-6xl px-4 py-8">
-        {{ partial "class/bulletbox.html" (dict
-          "icon" "class/icons/bug.html"
-          "title" "powerful scripting"
-          "description" "expand game functionality with Lua scripts"
-        ) }}
-    </div>
-    <div class="max-w-6xl px-4 py-8">
-        {{ partial "class/bulletbox.html" (dict
-          "icon" "class/icons/bug.html"
-          "title" "bug fixes"
-          "description" "squash long-standing bugs and enjoy a more stable experience"
-        ) }}
-    </div>
-    <div class="max-w-6xl px-4 py-8">
-        {{ partial "class/bulletbox.html" (dict
-          "icon" "class/icons/bug.html"
-          "title" "evolving community"
-          "description" "join a growing community of developers and players"
-        ) }}
-    </div>
+  <div class="flex flex-wrap justify-center gap-4 my-10">
+
+      {{ partial "class/bulletbox.html" (dict
+        "icon" "class/icons/code.html"
+        "title" "powerful scripting"
+        "description" "expand game functionality with Lua scripts"
+      ) }}
+
+      {{ partial "class/bulletbox.html" (dict
+        "icon" "class/icons/bug.html"
+        "title" "bug fixes"
+        "description" "squash long-standing bugs and enjoy a more stable experience"
+      ) }}
+      {{ partial "class/bulletbox.html" (dict
+        "icon" "class/icons/people.html"
+        "title" "evolving community"
+        "description" "join a growing community of developers and players"
+      ) }}
   </div>
   
 </body>

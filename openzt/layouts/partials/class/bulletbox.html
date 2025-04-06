@@ -10,14 +10,14 @@ It's used on the main page below the jumbotron and meant to highlight key featur
 
 
 {{/*  Set default values for the title, description, link, and link text */}}
-{{/*  Default values for the title, description, link, and link text */}}"
+{{/*  Default values for the title, description, link, and link text */}}
 {{ $title := .title | default "Title" }}
 {{ $description := .description | default "Description" }}
 {{ $link := .link | default "#" }}
 {{ $linkText := .linkText | default "Learn more" }}
 
 {{/*  Bullet box component */}}
-<div class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg hover:shadow-lg transition-shadow duration-300 min-h-40">
+<div class="flex flex-col items-center justify-center p-8 bg-gray-100 rounded-lg hover:shadow-lg transition-shadow duration-300 min-h-40">
     {{/* Positioning */}}
     <div class="w-full max-w-xs text-left">
         {{/* Title and icon */}}
