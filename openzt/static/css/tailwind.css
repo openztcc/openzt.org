@@ -6,3 +6,10 @@
     background-image: url('../images/banner.png');
   }
 }
+
+@layer theme {
+    :root {
+      --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+    }
+  }
+  

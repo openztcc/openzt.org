@@ -12,6 +12,9 @@ module.exports = {
           DEFAULT: '#FED284',
         }
       },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+      }
     },
   },
   content: [
