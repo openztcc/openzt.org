@@ -1,0 +1,37 @@
+{{/*  Bullet box is a simple component that shows an icon, a title, and a short description.
+It's used on the main page below the jumbotron and meant to highlight key features of OpenZT.  */}}
+
+{{ $icon := .icon }}
+{{ if not $icon }}
+  {{ $icon = partial "class/icons/buoy.html" . }}
+{{ else if strings.HasSuffix $icon ".html" }}
+  {{ $icon = partial $icon . }}
+{{ end }}
+
+
+{{/*  Set default values for the title, description, link, and link text */}}
+{{/*  Default values for the title, description, link, and link text */}}"
+{{ $title := .title | default "Title" }}
+{{ $description := .description | default "Description" }}
+{{ $link := .link | default "#" }}
+{{ $linkText := .linkText | default "Learn more" }}
+
+{{/*  Bullet box component */}}
+<div class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg hover:shadow-lg transition-shadow duration-300">
+    {{/* Positioning */}}
+    <div class="w-full max-w-xs text-left">
+        {{/* Title and icon */}}
+        <h3 class="text-xl font-semibold inline-flex items-center gap-2 mb-2">
+            <span class="text-blue-500 w-6 h-6 inline-block translate-y-0.5">
+                {{ $icon | safeHTML }}
+            </span>
+            {{ $title }}
+        </h3>
+      
+        {{/* Description */}}
+        <p class="text-gray-700 mb-4">{{ $description }}</p>
+    </div>
+  </div>
+  
+  
+  
