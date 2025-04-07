@@ -18,25 +18,41 @@
   {{/* Jumbotron */}}
   {{ partial "jumbotron.html" . }}
 
-  {{/* Bullet boxes */}}
-  <div class="flex flex-wrap justify-center gap-4 my-10 px-8 sm:px-16 xl:px-0">
+  {{/* Roadmap */}}
+  <div class="flex flex-col items-center justify-center text-white py-10 px-8 sm:px-16 xl:px-0">
+    <div class="w-full max-w-6xl">
+      <h1 class="text-4xl font-bold text-left my-10">
+        roadmap: phase 1
+      </h1>
+      <p class="text-white text-lg max-w-6xl">
+        openzt is a project two years in the making. our goals for now are simple: finish phase 1 of the roadmap, which includes
+        lua scripting support so that you can find new ways to mod the game, bug fixes, and a mod manager to make it easier to install and manage mods.
+        join us on Discord to help us test the game and report bugs, or just to chat with other players and developers.
+      </p>
+    </div>
+    <div id="roadmap" class="flex flex-wrap justify-center gap-4 my-10 px-8 py-10 sm:px-16 xl:px-0">
 
-      {{ partial "class/bulletbox.html" (dict
-        "icon" "class/icons/code.html"
-        "title" "powerful scripting"
-        "description" "expand game functionality with Lua scripts"
-      ) }}
 
-      {{ partial "class/bulletbox.html" (dict
-        "icon" "class/icons/bug.html"
-        "title" "bug fixes"
-        "description" "squash long-standing bugs and enjoy a more stable experience"
-      ) }}
-      {{ partial "class/bulletbox.html" (dict
-        "icon" "class/icons/people.html"
-        "title" "evolving community"
-        "description" "join a growing community of developers and players"
-      ) }}
+        {{ partial "class/bulletbox.html" (dict
+          "icon" "class/icons/code.html"
+          "title" "powerful scripting"
+          "description" "expand game functionality with Lua scripts"
+        ) }}
+
+        {{ partial "class/bulletbox.html" (dict
+          "icon" "class/icons/bug.html"
+          "title" "bug fixes"
+          "description" "squash long-standing bugs and enjoy a more stable experience"
+        ) }}
+        {{ partial "class/bulletbox.html" (dict
+          "icon" "class/icons/puzzle.html"
+          "title" "mod manager"
+          "description" "easily install and manage mods with a user-friendly interface"
+        ) }}
+    </div>
+  </div>
+
+
   </div>
   
     {{/* Footer */}}
