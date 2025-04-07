@@ -3,7 +3,7 @@
 /* Custom background image classes */
 @layer utilities {
   .bg-jumbotron {
-    background-image: url('../images/banner.jpg');
+    background-image: url('../images/banner.png');
   }
 }
 
@@ -16,4 +16,6 @@
     --color-ozt-dark: #77956C;
     --color-ozt-light: #BEE5B0;
     --color-ozt-accent: #FED284;
+    --color-ozt-dbrown: #5A5533;
+    --color-ozt-lbrown: #807849;
 }
