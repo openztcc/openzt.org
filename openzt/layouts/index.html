@@ -11,6 +11,7 @@
   <title>{{ .Title }}</title>
 </head>
 <body class="font-sans bg-ozt-default">
+
   {{/* Navigation bar */}}
   {{ partial "nav.html" . }}
 
@@ -18,7 +19,7 @@
   {{ partial "jumbotron.html" . }}
 
   {{/* Bullet boxes */}}
-  <div class="flex flex-wrap justify-center gap-4 my-10">
+  <div class="flex flex-wrap justify-center gap-4 my-10 px-8 sm:px-16 xl:px-0">
 
       {{ partial "class/bulletbox.html" (dict
         "icon" "class/icons/code.html"
