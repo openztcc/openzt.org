@@ -1,15 +1,17 @@
 {{/* Main navigation */}}
-<nav class="text-white py-2 flex items-center justify-between max-w-6xl mx-auto h-14 px-8 sm:px-16 xl:px-0">
+<nav class="text-white py-2 sticky top-0 z-50 shadow-lg transition duration-300 bg-ozt-default/80 backdrop-blur-lg">
+  <div class="flex items-center justify-between w-full max-w-6xl mx-auto h-14 px-8 sm:px-16 xl:px-0">
     <div class="flex items-center gap-2">
       <a class="font-bold text-2xl hover:text-ozt-accent hover:bg-ozt-dark rounded-lg px-2 py-1 transition duration-300" href="/">
         open<span class="text-ozt-accent">zt</span>
       </a>
     </div>
     <div class="hidden lg:flex space-x-4 font-semibold">
-      <a href="/releases" class="hover:text-ozt-accent transition duration-300">releases</a>
+      <a href="https://github.com/openztcc/openzt/releases" class="hover:text-ozt-accent transition duration-300">releases</a>
       <a href="/tools" class="hover:text-ozt-accent transition duration-300">tools</a>
-      <a href="/tools" class="hover:text-ozt-accent transition duration-300">documentation</a>
+      <a href="https://github.com/openztcc/openzt/blob/main/CONTRIBUTING.md" class="hover:text-ozt-accent transition duration-300">documentation</a>
       <a href="https://discord.gg/ATqFYVsjkc" class="hover:text-ozt-accent transition duration-300">discord</a>
     </div>
+  </div>
 </nav>
   
