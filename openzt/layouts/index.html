@@ -1,69 +1,35 @@
-<!DOCTYPE html>
-<html class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  {{/*  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>  */}}
-  <link rel="stylesheet" href=".{{ "/css/main.css" | relURL }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title>{{ .Title }}</title>
-</head>
-<body class="font-sans bg-ozt-default">
+{{ define "main" }}
+{{/* Main content */}}
+{{/* Jumbotron */}}
+{{ partial "partials/jumbotron.html" . }}
 
-  {{/* Navigation bar */}}
-  {{ partial "nav.html" . }}
-
-  {{/* Jumbotron */}}
-  {{ partial "jumbotron.html" . }}
-
-  {{/* Roadmap */}}
-  <div class="flex flex-col items-center justify-center text-white py-10 px-8 sm:px-16 xl:px-0 bg-ozt-light">
-    <div class="w-full max-w-6xl">
-      <h1 class="text-4xl font-bold text-left my-10">
-        roadmap: phase 1
-      </h1>
-      <p class="text-white text-lg max-w-6xl my-t-5">
-        openzt is a project two years in the making. our goals for now are simple: finish phase 1 of the roadmap, which includes
-        lua scripting support so that you can find new ways to mod the game, bug fixes, and a mod manager to make it easier to install and manage mods.
-        join us on Discord to help us test the game and report bugs, or just to chat with other players and developers.
-      </p>
-    </div>
-    <div id="roadmap" class="flex flex-wrap justify-center gap-4 my-10 px-8 py-10 sm:px-16 xl:px-0">
-
-
-        {{ partial "class/bulletbox.html" (dict
-          "icon" "class/icons/code.html"
-          "title" "powerful scripting"
-          "description" "expand game functionality with Lua scripts"
-        ) }}
-
-        {{ partial "class/bulletbox.html" (dict
-          "icon" "class/icons/bug.html"
-          "title" "bug fixes"
-          "description" "squash long-standing bugs and enjoy a more stable experience"
-        ) }}
-        {{ partial "class/bulletbox.html" (dict
-          "icon" "class/icons/puzzle.html"
-          "title" "mod manager"
-          "description" "easily install and manage mods with a user-friendly interface"
-        ) }}
-    </div>
+{{/* Roadmap */}}
+<div class="flex flex-col items-center justify-center text-white py-10 px-8 sm:px-16 xl:px-0 bg-ozt-light">
+  <div class="w-full max-w-6xl">
+    <h1 class="text-4xl font-bold text-left my-10">
+      {{ .Params.subtitle }}
+    </h1>
+    <p class="text-white text-lg max-w-6xl my-t-5">
+      {{ .Content }}
+    </p>
   </div>
+  <div id="roadmap" class="flex flex-wrap justify-center gap-4 my-10 px-8 py-10 sm:px-16 xl:px-0">
+    {{ partial "class/bulletbox.html" (dict
+      "icon" "class/icons/code.html"
+      "title" "powerful scripting"
+      "description" "expand game functionality with Lua scripts"
+    ) }}
 
-
+    {{ partial "class/bulletbox.html" (dict
+      "icon" "class/icons/bug.html"
+      "title" "bug fixes"
+      "description" "squash long-standing bugs and enjoy a more stable experience"
+    ) }}
+    {{ partial "class/bulletbox.html" (dict
+      "icon" "class/icons/puzzle.html"
+      "title" "mod manager"
+      "description" "easily install and manage mods with a user-friendly interface"
+    ) }}
   </div>
-  
-    {{/* Footer */}}
-  <footer class="flex flex-wrap justify-center bg-ozt-default text-white py-4 px-8 sm:px-16 xl:px-0">
-    <div class="max-w-6xl px-8 sm:px-16 xl:px-0 text-left justify-center">
-      <p class="text-sm py-4 max-w-6xl">© 2025 OpenZT. All rights reserved.</p>
-    </div>
-  </footer>
-{{/*  
-  <div class="w-full h-45 bg-wall"></div>  */}}
-
-  
-</body>
-</html>
+</div>
+{{ end }}
