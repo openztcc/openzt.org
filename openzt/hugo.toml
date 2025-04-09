@@ -1,4 +1,4 @@
-baseURL = 'https://openzt.org/'
+baseURL = 'https://openztcc.github.io/openzt.org/'
 languageCode = 'en-us'
 title = 'OpenZT'
 publishDir = '../docs'
