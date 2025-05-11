@@ -1,4 +1,4 @@
 baseURL = 'https://openzt.org/'
 languageCode = 'en-us'
 title = 'OpenZT'
-publishDir = '/docs'
+publishDir = 'docs'
