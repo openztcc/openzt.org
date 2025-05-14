@@ -18,6 +18,24 @@
       margin: 2rem 0;
       border-radius: 0.5rem;
   }
+
+  .docs-content h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+  }
+
+  .docs-content ul {
+      margin: 1rem 0;
+      padding-left: 2rem;
+  }
+
+  .docs-content li {
+      margin: 0.5rem 0;
+      padding-left: 0.5rem;
+      list-style-type: disc;
+  }
 }
 
 @theme {
