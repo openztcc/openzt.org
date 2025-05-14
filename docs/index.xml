@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OpenZT</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on OpenZT</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PANDA User Guide</title>
+      <link>http://localhost:1313/docs/panda-user-guide/</link>
+      <pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/panda-user-guide/</guid>
+      <description>PANDA (Project and Animal) Loader is a mod loader for Zoo Tycoon that lets users manage and install mods easily. It also functions as the main GUI for the OpenZT API, letting users enable scripting and other OpenZT features.</description>
+    </item>
+    <item>
+      <title>OpenZT</title>
+      <link>http://localhost:1313/docs/_index-copy/</link>
+      <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/_index-copy/</guid>
+      <description>openzt is a project two years in the making. our goals for now are simple: finish phase 1 of the roadmap, which includes lua scripting support so that you can find new ways to mod the game, bug fixes, and a mod manager to make it easier to install and manage mods. join us on Discord to help us test the game and report bugs, or just to chat with other players and developers.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/docs/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/getting-started/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
