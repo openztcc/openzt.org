@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* Custom background image classes */
+@layer utilities {
+  .bg-jumbotron {
+    background-image: url('../images/bannerv2.png');
+  }
+
+  .bg-wall {
+    background-image: url('../images/wall.jpg');
+  }
+
+  .shadow-text {
+      text-shadow: 0 3px 3px #3f4d3a;
+  }
+}
+
+@theme {
+    /* Font styles */
+    --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+
+    /* Custom color palettes */
+    --color-ozt-default: #34472D;
+    --color-ozt-dark: #273621;
+    --color-ozt-sdark: #77956C;    
+    --color-ozt-light: #5a774f;
+    --color-ozt-accent: #FED284;
+    --color-ozt-dbrown: #5A5533;
+    --color-ozt-lbrown: #807849;
+}
