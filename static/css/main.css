@@ -233,6 +233,9 @@
   .block {
     display: block;
   }
+  .contents {
+    display: contents;
+  }
   .flex {
     display: flex;
   }
@@ -631,6 +634,18 @@
   }
   .docs-content a:hover {
     text-decoration: underline;
+  }
+  .docs-content pre {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+  }
+  .docs-content p code {
+    background-color: var(--color-ozt-dbrown);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+    font-family: 'Courier New', Courier, monospace;
   }
 }
 @property --tw-translate-x {

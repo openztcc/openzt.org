@@ -93,6 +93,18 @@
 </ul>
 <p>All dependencies are included in the repository with exception for MingW, which you will need to install separately. The project uses Qt 6.8.1 which includes this version of MingW by default. You can find the Qt installer <a href="https://www.qt.io/download-qt-installer">here</a>.</p>
 <h3 id="compiling">Compiling</h3>
+<p>PANDA currently only targets Windows, so you will need Powershell to run the build script. Replace the following flags with your respective paths to gcc, g++, and mingw_64.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>cmake -G <span style="color:#e6db74">&#34;Ninja&#34;</span> `
+</span></span><span style="display:flex;"><span>-DCMAKE_C_COMPILER=<span style="color:#e6db74">&#34;F:/QT/Tools/mingw1310_64/bin/gcc.exe&#34;</span> `
+</span></span><span style="display:flex;"><span>-DCMAKE_CXX_COMPILER=<span style="color:#e6db74">&#34;F:/QT/Tools/mingw1310_64/bin/g++.exe&#34;</span> `
+</span></span><span style="display:flex;"><span>-DCMAKE_PREFIX_PATH=<span style="color:#e6db74">&#34;F:/QT/6.8.1/mingw_64&#34;</span> `
+</span></span><span style="display:flex;"><span>-S . -B ./build
+</span></span></code></pre></div><p>After running the above command, you can run the build script to compile PANDA. The output will be in the <code>build</code> directory. Qt still needs all dependencies to be installed, so you will need to run the following command to install them:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>windeployqt
+</span></span></code></pre></div><p>This will copy all the necessary DLLs to the <code>build</code> directory. You can then run PANDA from the <code>build</code> directory or copy the contents to a preferred location.</p>
+<h2 id="usage">Usage</h2>
+<h3 id="starting-panda">Starting PANDA</h3>
+<p>On first load, PANDA will create a directory in <code>~/&lt;your name&gt;/.panda</code> where it will store all settings and mod data. Here</p>
 
       
     </div>

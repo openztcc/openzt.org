@@ -37,3 +37,26 @@ All dependencies are included in the repository with exception for MingW, which 
 
 ### Compiling
 
+PANDA currently only targets Windows, so you will need Powershell to run the build script. Replace the following flags with your respective paths to gcc, g++, and mingw_64.
+
+```powershell
+cmake -G "Ninja" `
+-DCMAKE_C_COMPILER="F:/QT/Tools/mingw1310_64/bin/gcc.exe" `
+-DCMAKE_CXX_COMPILER="F:/QT/Tools/mingw1310_64/bin/g++.exe" `
+-DCMAKE_PREFIX_PATH="F:/QT/6.8.1/mingw_64" `
+-S . -B ./build
+```
+
+After running the above command, you can run the build script to compile PANDA. The output will be in the `build` directory. Qt still needs all dependencies to be installed, so you will need to run the following command to install them:
+
+```powershell
+windeployqt
+```
+
+This will copy all the necessary DLLs to the `build` directory. You can then run PANDA from the `build` directory or copy the contents to a preferred location.
+
+## Usage
+
+### Starting PANDA
+
+On first load, PANDA will create a directory in `~/<your name>/.panda` where it will store all settings and mod data. Here
