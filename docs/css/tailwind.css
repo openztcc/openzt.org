@@ -60,7 +60,7 @@
       margin: 1rem 0;
   }
 
-  .docs-content p code {
+  .docs-content p code, .docs-content ul code {
       background-color: var(--color-ozt-dbrown);
       padding: 0.2rem 0.5rem;
       border-radius: 0.25rem;

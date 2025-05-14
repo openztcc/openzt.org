@@ -104,7 +104,28 @@
 </span></span></code></pre></div><p>This will copy all the necessary DLLs to the <code>build</code> directory. You can then run PANDA from the <code>build</code> directory or copy the contents to a preferred location.</p>
 <h2 id="usage">Usage</h2>
 <h3 id="starting-panda">Starting PANDA</h3>
-<p>On first load, PANDA will create a directory in <code>~/&lt;your name&gt;/.panda</code> where it will store all settings and mod data. Here</p>
+<p>On first load, PANDA will create a directory in <code>C:/Users/&lt;your name&gt;/.panda</code> where it will store all settings and mod data. There are a few important files and directories that will be created:</p>
+<ul>
+<li><code>panda.toml</code>: This file contains the main configuration for PANDA. Here you can set the path to your Zoo Tycoon installation, as well as the path to an ISO file if you are using one. If you are using an ISO, make sure you set the <code>useIsoMounting</code> flag to <code>true</code>. Don&rsquo;t worry about mounting the image, PANDA will do that for you.</li>
+<li><code>/modicons</code>: This directory contains all the mod icons that PANDA has extracted from the mods using the APE Graphics Parser.</li>
+<li><code>/resources/mods/.disabled</code>: PANDA will automatically move mods to this directory when you disable them.</li>
+</ul>
+<p>Loading mods on first go might take a few minutes if you have a lot of files in the <code>dlupdate</code> directory.</p>
+<h3 id="installing-mods">Installing Mods</h3>
+<p>PANDA does not currently have an add file function, so you will need to add files manually to the <code>dlupdate</code> directory in your Zoo Tycoon installation. Make sure the files are in .ztd format and that they sit at the root of that directory. Make sure to re-launch PANDA and it will know to load your new mods.</p>
+<h3 id="enablingdisabling-mods">Enabling/Disabling Mods</h3>
+<p><img src="../images/panda2.jpg" alt="fig2"></p>
+<h3 id="search-mods">Search Mods</h3>
+<p>To search for mods, simply type in the search bar at the top of the window. PANDA uses a tag system for search, so by prefixing your mod with <code>by:</code> you can search by author. Delete the tag to search by title. We are actively working on additional tags to make searching easier, so stay tuned for updates.</p>
+<p><img src="../images/panda3.jpg" alt="fig3"></p>
+<p>To clear the searchbar quickly, simply hit the <code>Esc</code> key. This will also reset the search to show all mods.</p>
+<h3 id="extracting-sprites">Extracting Sprites</h3>
+<p>As mentioned earlier, you can access extracted icon sprites from the mods in the <code>../panda/modicons</code> directory. This is useful if you want to use the icons in your own projects. Future development will additionally allow extraction of other kinds of sprites, such as animal sprites if they are available in the mod.</p>
+<p><img src="../images/panda4.jpg" alt="fig4"></p>
+<h3 id="zooini-settings">Zoo.INI Settings</h3>
+<p>The Zoo.INI file is located in the root of your Zoo Tycoon installation and contains configuration for things like the game resolution, sound settings, and other options. You can modify these settings directly from the PANDA GUI without needing to open the file manually. To do this, visit the <code>Settings</code> tab in the PANDA GUI.</p>
+<p><img src="../images/panda5.jpg" alt="fig5"></p>
+<p>All settings are self-documented from the menu. Just make sure to save the changes before moving screens so that the file is propagated.</p>
 
       
     </div>
