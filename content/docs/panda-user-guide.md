@@ -22,4 +22,18 @@ PANDA (Project and Animal) Loader is a mod loader for Zoo Tycoon that lets users
 
 ## Installation
 
-At the moment, PANDA does not have a binary installer. To install PANDA, you will need to compile it from source. You can find the source code on the [PANDA GitHub repository](
+At the moment, PANDA does not have a binary installer. To install PANDA, you will need to compile it from source. You can find the source code on the [PANDA GitHub repository](https://github.com/openztcc/PANDA).
+
+### Dependencies
+
+- zlib 1.3.1
+- QuaZip (Wrapper for zlib)
+- Toml++
+- SimpleIni
+- APE Graphics Parser
+- MingW 13.1.0
+
+All dependencies are included in the repository with exception for MingW, which you will need to install separately. The project uses Qt 6.8.1 which includes this version of MingW by default. You can find the Qt installer [here](https://www.qt.io/download-qt-installer).
+
+### Compiling
+

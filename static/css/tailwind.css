@@ -26,6 +26,13 @@
       font-weight: 600;
   }
 
+  .docs-content h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+  }
+
   .docs-content ul {
       margin: 1rem 0;
       padding-left: 2rem;
@@ -36,6 +43,17 @@
       padding-left: 0.5rem;
       list-style-type: disc;
   }
+
+  .docs-content a {
+      color: var(--color-ozt-accent);
+      text-decoration: none;
+  }
+
+  .docs-content a:hover {
+      text-decoration: underline;
+  }
+
+
 }
 
 @theme {
