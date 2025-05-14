@@ -600,10 +600,6 @@
   .shadow-text {
     text-shadow: 0 3px 3px #3f4d3a;
   }
-  .docs-content img {
-    margin: 2rem 0;
-    border-radius: 0.5rem;
-  }
 }
 @property --tw-translate-x {
   syntax: "*";
